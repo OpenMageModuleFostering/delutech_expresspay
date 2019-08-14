@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Delutech_Expresspay</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>http://opensource.org/licenses/osl-3.0.php</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Expresspay allows you to accept payment on your magento store via Visa Ghana, Visacard, MasterCard, American Express and mobile money</summary>
+    <description>expressPay payment module by expressPay Ghana allow your customers to make payment with Visa Ghana, Visacard, MasterCard, American Express and mobile money on checkout. The payment gateway is powered by Expresspay Ghana.</description>
+    <notes>First release</notes>
+    <authors><author><name>Delu Akin</name><user>admin</user><email>elnino.akin@gmail.com</email></author></authors>
+    <date>2016-01-17</date>
+    <time>18:03:57</time>
+    <contents><target name="magecommunity"><dir name="Delutech"><dir name="Expresspay"><dir name="Block"><dir name="Form"><file name="Expresspay.php" hash="1c74814b77ba66adcd8cde5bc2f07428"/></dir></dir><dir name="Helper"><file name="Data.php" hash="13ab670f7963783532edca8918dea24e"/></dir><dir name="Model"><file name="Currency.php" hash="83067ce543d14ffcc4315442b07cfed9"/><file name="Expresspay.php" hash="12cd258aa4fbf98d606a627504fafb03"/></dir><dir name="controllers"><file name="ProcessController.php" hash="9d439c6e4ac949c54d30bbbaf2910b23"/></dir><dir name="etc"><file name="adminhtml.xml" hash="ec46a57eff7a57d1b48883f373b45855"/><file name="config.xml" hash="7816c8519af84980453e2c43463e7c0e"/><file name="system.xml" hash="98e91254a5b3d0aab58491d0949e124b"/></dir></dir></dir></target><target name="magelocal"><dir name="modules"><file name="Delutech_Expresspay.xml" hash=""/></dir></target><target name="magedesign"><dir name="frontend"><dir name="delutech"><dir name="expresspay"><dir name="layout"><file name="expresspay.xml" hash="fda42a952e391a07e114299d466deaa0"/></dir><dir name="template"><dir name="expresspay"><file name="expresspay.phtml" hash="df7734a2c055c798848ca0efc356fbea"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

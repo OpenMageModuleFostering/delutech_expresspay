@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Delutech_Expresspay>
+            <version>1.0</version>
+        </Delutech_Expresspay>
+    </modules>
+ 
+    <global>
+           
+        <helpers>
+            <expresspay>
+                <class>Delutech_Expresspay_Helper</class>
+            </expresspay>
+        </helpers>
+ 
+        <blocks>
+            <expresspay>
+                <class>Delutech_Expresspay_Block</class>
+            </expresspay>
+        </blocks>
+         
+        <models>
+            <expresspay>
+                <class>Delutech_Expresspay_Model</class>
+            </expresspay>
+        </models>
+ 
+        <resources>
+            <expresspay_setup>
+                <setup>
+                    <module>Delutech_Expresspay</module>
+                </setup>
+            </expresspay_setup>
+        </resources>
+    </global>
+ 
+    <default>
+        <payment>
+            <expresspay>
+                <active>1</active>
+                <model>expresspay/Expresspay</model>
+                <order_status>pending</order_status>
+                <title>Expresspay</title>
+                <sandbox>1</sandbox>
+                <allowspecific>0</allowspecific>
+                <payment_action>sale</payment_action>
+            </expresspay>
+        </payment>
+    </default>
+   
+    <frontend>
+        <routers>
+            <expresspay>
+                <use>standard</use>
+                <args>
+                    <module>Delutech_Expresspay</module>
+                    <frontName>expresspay</frontName>
+                </args>
+            </expresspay>
+        </routers>
+        <layout>
+            <updates>
+                <expresspay>
+                    <file>expresspay.xml</file>
+                </expresspay>
+            </updates>
+        </layout> 
+    </frontend>   
+    
+</config>
